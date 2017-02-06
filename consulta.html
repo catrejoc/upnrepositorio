@@ -1,0 +1,111 @@
+<html>
+<head>
+    <title>      Form     </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script>
+    //codigo js
+        var x=0;
+        var suma=0;
+        function fn(y){
+            switch(x){
+                case 0:
+                    suma=y;
+                    break;
+                case 1:
+                    suma+=y;
+                    alert(suma);
+                    x=0;
+                    break;
+                case 2:
+                    suma-=y;
+                    alert(suma);
+                    x=0;
+                    break;
+                case 3:
+                    suma*=y;
+                    alert(suma);
+                    x=0;
+                    break;
+                case 4:
+                    suma/=y;
+                    alert(suma);
+                    //x=0;
+                    //break;
+                case 5:
+                    suma=String(suma)+String(y);
+                    alert(suma);
+                    x=0;
+                    break;
+                case 6:
+                    s=String(suma)+(".")+y;
+                    suma=parseFloat(s);
+                    x=0;
+                    break;
+                
+            }
+            
+        }
+        function f2(){
+            x=3
+        }
+        function f3(){
+            x=4;
+        }
+        function f4(){
+            x=1;
+        }
+        function f5(){
+            x=2;
+        }
+        function f11(){
+            x=6;
+        }
+        function f7(){
+       // var x=document.getElementById("name").value;
+         //   var y=document.getElementById("mail").value;
+           // var z = parseInt(x)+parseInt(y);
+        //alert(z);
+        }
+        function f6(){
+            alert("desea cancelar");
+            
+        }
+    </script>
+    
+    </head>
+<body>
+    <div id="contenido1">
+        
+    Nombre: <input type="text" name="name" id="name"/><br>
+    Correo: <input type="email" name="mail" id="mail"/><br>
+        <input type="button" value="Cancel" onclick="f6()">
+        <input type="submit" value="Ok" name="ok" onclick="f7()">
+    </div>
+    <div id="contenido2">
+    <table>
+        <tr>
+            <td><input type="button" value="0" onclick="fn(0)"></td>
+            <td><input type="button" value="1" onclick="fn(1)"></td>
+            <td><input type="button" value="2" onclick="fn(2)"></td>
+            <td><input type="button" value="3" onclick="fn(3)"></td>
+            <td><input type="button" value="+" onclick="f4()"></td>
+            </tr>
+              <tr>
+            <td><input type="button" value="4" onclick="fn(4)"></td>
+            <td><input type="button" value="5" onclick="fn(5)"></td>
+            <td><input type="button" value="6" onclick="fn(6)"></td>
+            <td><input type="button" value="-" onclick="f5()"></td>
+                  <td><input type="button" value="&" onclick="f10()"></td>
+            </tr>
+              <tr>
+            <td><input type="button" value="7" onclick="fn(7)"></td>
+            <td><input type="button" value="8" onclick="fn(8)"></td>
+            <td><input type="button" value="9" onclick="fn(9)"></td>
+            <td><input type="button" value=. onclick="f11()"></td>
+            <td><input type="button" value="*" onclick="f2()"></td>
+            <td><input type="button" value="/" onclick="f3()"></td>
+            </tr>
+        </table>
+    </div>
+    </body>
+</html>

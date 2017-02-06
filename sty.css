@@ -1,0 +1,261 @@
+body{
+   background: rgb(255, 255, 255);   
+}
+
+
+
+#wrap {
+	width:960px;
+	margin:auto;
+	clear:both;
+}
+
+/* ---- HEADER ---- */
+header {    
+	width:100%;
+	float:left;
+background: rgba(181, 129, 80,.50);   
+box-shadow:0px 3px 5px #000;
+	-moz-box-shadow:0px 3px 5px #000;
+	-webkit-box-shadow:0px 3px 5px #000;
+}
+
+#logotipo {
+	float:right;
+}
+
+#logotipo a {
+	font-family:sourcesans-light;
+	font-size:30px;
+	color:#000;
+}
+
+#logotipo a:hover {text-decoration:none;}
+
+
+header ul, ol {
+list-style:none;
+    z-index: 10;
+}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+	background: #000;;  
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background: rgba(181, 129, 80,.50);  
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+
+
+/* ---- MAIN ---- */
+#main {
+	width:100%;
+	float:left;
+	margin:20px 0px 0px 0px;
+}
+
+/* ---- SLIDESHOW ---- */
+#slideshow {
+	width:100%;
+	height:500px;
+	float:left;
+background: rgba(181, 129, 80,.50);   
+	border:solid 5px rgba(181, 129, 80,.50);
+	margin-bottom:10px;
+}
+
+#slideshow img {
+	width:1200px;
+    max-width: 1000px;
+	height:500px;
+}
+
+#slideshow .pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+#slideshow .pagination li {
+	float:left;
+	margin:0 5px;
+	list-style:none;
+}
+
+#slideshow .pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+background: rgba(181, 129, 80,.50);   
+	float:left;
+	overflow:hidden;
+	border-radius:10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+}
+
+#slideshow .pagination li.current a {
+background: rgba(181, 129, 80,.50);   
+}
+
+/* ---- Bienvenidos ---- */
+#bienvenidos {
+	width:920px;
+	float:left;
+	padding:20px;
+	margin:20px 0px;
+background: rgba(181, 129, 80,.50);   
+	border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+	box-shadow:0px 2px 2px #000;
+		-moz-box-shadow:0px 2px 2px #000;
+		-webkit-box-shadow:0px 2px 2px #000;
+}
+
+/* ---- Contenido ---- */
+#contenido {
+	width:650px;
+	float:left;
+	padding:20px;
+	margin:20px 0px;
+background: rgba(181, 129, 80,.50);   
+	border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+	box-shadow:0px 2px 2px #000;
+		-moz-box-shadow:0px 2px 2px #000;
+		-webkit-box-shadow:0px 2px 2px #000;
+}
+
+#contenido article .thumb {
+	width:220px;
+	height:150px;
+	float:left;
+	margin:0px 10px 10px 0px;
+}
+
+
+/* ---- SIDEBAR ---- */
+aside {
+	width:220px;
+	float:right;
+/*margin-left:20px;*/
+background: rgba(181, 129, 80,.50);   
+	padding:10px 10px 0px 10px;
+	border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+	box-shadow:0px 2px 2px #000;
+		-moz-box-shadow:0px 2px 2px #000;	
+		-webkit-box-shadow:0px 2px 2px #000;
+}
+
+
+
+aside .widget ul li {
+	margin-bottom:5px;
+}
+
+aside .widget img {
+	width:220px;
+}
+
+/* ---- FOOTER ---- */
+footer {
+	width:100%;
+	float:left;
+	clear:both;
+background: rgba(181, 129, 80,.50);   
+	box-shadow:0px 2px 2px #000;
+		-moz-box-shadow:0px 2px 2px #000;
+		-webkit-box-shadow:0px 2px 2px #000;
+	border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+}
+
+footer section {
+	width:440px;
+	float:left;
+	padding:20px;
+}
+
+
+#copyright {
+	float:left;
+	width:960px;
+	margin:10px 0px;
+}
+
+#copyright p {
+	text-align:center;
+	font-size:12px;
+	color:black;
+	font-family:Arial, Helvetica, Sans-serif;
+}
+#nuevo{
+    
+    	width:920px;
+	float:left;
+	padding:20px;
+	margin:20px 0px;
+background: rgba(181, 129, 80,.50);   
+	border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+	box-shadow:0px 2px 2px #000;
+		-moz-box-shadow:0px 2px 2px #000;
+		-webkit-box-shadow:0px 2px 2px #000;
+}
+.texto{
+    
+    font-size: 28px;
+}
+
+#buscador{
+    position: absolute;
+    top: 22px;
+    left: 625px;
+}
+
+#form_subir{
+    
+}
+
+#nlogo {
+	float:right;
+}
+
+#nlogo a {
+	font-family:sourcesans-light;
+	font-size:30px;
+	color:#000;
+}
